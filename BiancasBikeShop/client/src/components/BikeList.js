@@ -7,7 +7,6 @@ export default function BikeList({setDetailsBikeId}) {
     const [bikes, setBikes] = useState([])
 
     const getAllBikes = () => {
-        //implement functionality here...
         getBikes().then(bikes=>setBikes(bikes))
     }
 
@@ -17,9 +16,8 @@ export default function BikeList({setDetailsBikeId}) {
     return (
         <>
         <h2>Bikes</h2>
-        {/* Use BikeCard component here to list bikes...*/}
         {bikes.map((bike)=>(
-            <BikeCard bike={bike} key={bike.id} SetDetailsBikeId={bike.id} />
+            <BikeCard bike={bike} key={bike.id} setDetailsBikeId={setDetailsBikeId} />
         ))}
         </>
     )
