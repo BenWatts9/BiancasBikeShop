@@ -1,6 +1,8 @@
 import {Card, CardBody, CardTitle, CardText, CardSubtitle, Button} from 'reactstrap';
 
 export default function BikeCard({bike, setDetailsBikeId}) {
+    
+    
     return (
         <Card
         color="dark"
